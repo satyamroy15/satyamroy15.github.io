@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satyam Roy | Mobile Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="hero">
+            <img src="https://placehold.co/120x120?text=Profile" alt="Profile photo" class="profile-pic">
+            <h1>Satyam Roy</h1>
+            <p>Mobile Application Developer | Flutter Developer</p>
+
+            <!-- Contact Links -->
+            <div class="contact-links">
+                <a href="mailto:roy1satyam@gmail.com">📧 Email</a>
+                <a href="https://github.com/satyamroy15" target="_blank">💻 GitHub</a>
+                <a href="https://linkedin.com/in/satyam-r-baa22a240" target="_blank">🔗 LinkedIn</a>
+            </div>
+
+            <!-- Resume -->
+            <a href="assets/resume.pdf" class="btn">Download Resume</a>
+        </div>
+
+        <!-- Navigation -->
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <!-- Theme Toggle -->
+        <button id="theme-toggle" class="btn">
+            <span id="theme-icon">🌙</span>
+        </button>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a mobile developer with <strong>4+ years of professional experience</strong>
+            building scalable, user‑centric applications. My expertise spans
+            <strong>Flutter (2+ years)</strong>, <strong>Java (1 year)</strong>, and
+            <strong>automation frameworks (1 year)</strong>. I specialize in crafting
+            clean architectures, integrating modern SDKs, and delivering polished
+            mobile experiences that balance performance with usability.
+        </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <ul class="skills-grid">
+            <li>Flutter SDK</li>
+            <li>Dart</li>
+            <li>Kotlin</li>
+            <li>Java</li>
+            <li>Android SDK</li>
+            <li>Firebase</li>
+            <li>Firestore</li>
+            <li>REST APIs</li>
+            <li>GetX</li>
+            <li>Riverpod</li>
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>GitHub Actions</li>
+            <li>CI/CD</li>
+            <li>Unit Testing</li>
+            <li>Integration Testing</li>
+            <li>Agile / Scrum</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <img src="https://placehold.co/600x400?text=Project+1" alt="Project 1">
+            <h3>Project 1</h3>
+            <p>Project 1 description</p>
+            <a href="https://github.com/username/project1" target="_blank">View on GitHub</a>
+        </div>
+        <div class="project">
+            <img src="https://placehold.co/600x400?text=Project+2" alt="Project 2">
+            <h3>Project 2</h3>
+            <p>Project 2 description</p>
+            <a href="https://github.com/username/project2" target="_blank">View on GitHub</a>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="job">
+            <h3>Senior Developer</h3>
+            <p><strong>Company Two</strong> | 2022 – 2025</p>
+            <ul>
+                <li>description line 1</li>
+                <li>description line 2</li>
+                <li>description line 3</li>
+            </ul>
+        </div>
+        <div class="job">
+            <h3>Software Developer</h3>
+            <p><strong>Company One</strong> | 2021 - 2022</p>
+            <ul>
+                <li>description line 1</li>
+                <li>description line 2</li>
+                <li>description line 3</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:roy1satyam@gmail.com">roy1satyam@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/satyam-r-baa22a240"
+                target="_blank">linkedin.com/in/satyam-r-baa22a240</a></p>
+        <p>GitHub: <a href="https://github.com/satyamroy15" target="_blank">github.com/satyamroy15</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Satyam Roy. All rights reserved.</p>
+    </footer>
+
+    <!-- Theme Toggle Script -->
+    <script>
+        const toggleBtn = document.getElementById('theme-toggle');
+        const themeIcon = document.getElementById('theme-icon');
+
+        toggleBtn.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            document.querySelector('header').classList.toggle('dark-mode');
+
+            // Swap icon depending on theme
+            if (document.body.classList.contains('dark-mode')) {
+                themeIcon.textContent = '☀️'; // sun icon for dark mode
+            } else {
+                themeIcon.textContent = '🌙'; // moon icon for light mode
+            }
+        });
+    </script>
+
+</body>
+
+</html>
