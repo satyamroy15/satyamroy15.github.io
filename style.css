@@ -434,8 +434,16 @@ body.dark-mode .skill-chip i {
     max-height: 80vh !important;
 }
 
-/* Small phones */
-@media (max-width: 480px) {
+/* Extra-small phones: width <= 425px */
+@media (max-width: 425px) {
+    .lb-image {
+        max-width: 85vw !important;
+        max-height: 70vh !important;
+    }
+}
+
+/* Small phones: 426px - 480px */
+@media (min-width: 426px) and (max-width: 480px) {
     .lb-image {
         max-width: 70vw !important;
         max-height: 65vh !important;
