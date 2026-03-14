@@ -297,6 +297,7 @@
 
     <!-- Theme Toggle Script -->
     <script>
+
         const toggleBtn = document.getElementById('theme-toggle');
         const themeIcon = document.getElementById('theme-icon');
 
@@ -329,12 +330,34 @@
         document.getElementById("scrollTopBtn").addEventListener("click", function () {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
+
+
+        // Swipe gesture handling for mobile devices
+        document.addEventListener("DOMContentLoaded", function () {
+            const lightboxContainer = document.querySelector("body");
+            const hammer = new Hammer(lightboxContainer);
+
+            hammer.on("swipeleft", function () {
+                const next = document.querySelector(".lb-next");
+                if (next) next.click();
+            });
+
+            hammer.on("swiperight", function () {
+                const prev = document.querySelector(".lb-prev");
+                if (prev) prev.click();
+            });
+
+        });
+
     </script>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
     <!-- Lightbox script -->
     <script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox.min.js"></script>
+
+    <!-- Hammer JS -->
+    <script src="https://cdn.jsdelivr.net/npm/hammerjs@2.0.8/hammer.min.js"></script>
 
 </body>
 
