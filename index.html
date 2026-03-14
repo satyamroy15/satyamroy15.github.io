@@ -4,135 +4,296 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Satyam Roy | Mobile Developer Portfolio</title>
+    <title>Satyam Roy | Software Developer Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css">
 </head>
 
 <body>
 
     <!-- Header -->
     <header>
+
+        <!-- Hero -->
         <div class="hero">
-            <img src="https://placehold.co/120x120?text=Profile" alt="Profile photo" class="profile-pic">
+            <img src="assets/dev_profile_pic.jpg" alt="Profile photo" class="profile-pic">
             <h1>Satyam Roy</h1>
-            <p>Mobile Application Developer | Flutter Developer</p>
+
+
+            <!-- Tagline -->
+            <p class="tagline">
+                Software Developer
+            </p>
+
 
             <!-- Contact Links -->
-            <div class="contact-links">
-                <a href="mailto:roy1satyam@gmail.com">📧 Email</a>
-                <a href="https://github.com/satyamroy15" target="_blank">💻 GitHub</a>
-                <a href="https://linkedin.com/in/satyam-r-baa22a240" target="_blank">🔗 LinkedIn</a>
+            <div class="contact-top-links">
+                <a href="https://github.com/satyamroy15" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://linkedin.com/in/satyam-r-baa22a240" target="_blank">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
             </div>
 
-            <!-- Resume -->
-            <a href="assets/resume.pdf" class="btn">Download Resume</a>
+
         </div>
+
 
         <!-- Navigation -->
         <nav>
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
-            <a href="#experience">Experience</a>
             <a href="#contact">Contact</a>
         </nav>
 
+
         <!-- Theme Toggle -->
-        <button id="theme-toggle" class="btn">
-            <span id="theme-icon">🌙</span>
+        <button id="theme-toggle" class="theme-btn">
+            <i id="theme-icon" class="fas fa-moon"></i>
         </button>
+
     </header>
+
 
     <!-- About Section -->
     <section id="about">
         <h2>About Me</h2>
-        <p>
-            I am a mobile developer with <strong>4+ years of professional experience</strong>
-            building scalable, user‑centric applications. My expertise spans
-            <strong>Flutter (2+ years)</strong>, <strong>Java (1 year)</strong>, and
-            <strong>automation frameworks (1 year)</strong>. I specialize in crafting
-            clean architectures, integrating modern SDKs, and delivering polished
-            mobile experiences that balance performance with usability.
-        </p>
+        <div class="about-card">
+            <p>
+                I am a <strong>mobile application developer</strong> with <strong>~4 years of professional
+                    experience</strong>
+                building scalable, user-centric applications. My expertise spans
+                <strong>Flutter SDK (3+ years)</strong>, delivering cross-platform apps with responsive UI,
+                state management using <strong>Riverpod</strong> and <strong>GetX</strong>, and integration of
+                <strong>Firebase</strong> (Auth, Firestore, Cloud Functions) and
+                <strong>Google Cloud services</strong> (Maps SDK, Places API, Geocoding API, Location Services).
+            </p>
+            <p>
+                On the native side, I have hands‑on experience with <strong>Kotlin</strong> and the <strong>Android
+                    SDK</strong>,
+                crafting modular architectures, leveraging Jetpack components, and optimizing performance for Android
+                devices.
+                I also bring knowledge of <strong>Java</strong>, <strong>Spring Boot</strong>, and CI/CD
+                pipelines
+                with <strong>GitHub Actions</strong> to ensure robust delivery.
+            </p>
+            <p>
+                My focus is on clean architecture, responsive design, and delivering polished mobile experiences that
+                balance
+                <strong>performance</strong> with <strong>usability</strong>, making apps <strong>production‑ready and
+                    industry‑standard</strong>.
+            </p>
+        </div>
     </section>
+
 
     <!-- Skills Section -->
     <section id="skills">
         <h2>Technical Skills</h2>
-        <ul class="skills-grid">
-            <li>Flutter SDK</li>
-            <li>Dart</li>
-            <li>Kotlin</li>
-            <li>Java</li>
-            <li>Android SDK</li>
-            <li>Firebase</li>
-            <li>Firestore</li>
-            <li>REST APIs</li>
-            <li>GetX</li>
-            <li>Riverpod</li>
-            <li>Git</li>
-            <li>GitHub</li>
-            <li>GitHub Actions</li>
-            <li>CI/CD</li>
-            <li>Unit Testing</li>
-            <li>Integration Testing</li>
-            <li>Agile / Scrum</li>
-        </ul>
+        <div class="skills-chips">
+            <span class="skill-chip"><i class="fas fa-mobile-alt"></i> Flutter SDK</span>
+            <span class="skill-chip"><i class="fas fa-code"></i> Dart</span>
+            <span class="skill-chip"><i class="fab fa-android"></i> Kotlin</span>
+            <span class="skill-chip"><i class="fab fa-java"></i> Java</span>
+            <span class="skill-chip"><i class="fab fa-android"></i> Android SDK</span>
+            <span class="skill-chip"><i class="fas fa-fire"></i> Firebase</span>
+            <span class="skill-chip"><i class="fas fa-database"></i> Firestore</span>
+            <span class="skill-chip"><i class="fas fa-network-wired"></i> REST APIs</span>
+            <span class="skill-chip"><i class="fas fa-stream"></i> Riverpod</span>
+            <span class="skill-chip"><i class="fas fa-layer-group"></i> GetX</span>
+            <span class="skill-chip"><i class="fab fa-git-alt"></i> Git</span>
+            <span class="skill-chip"><i class="fab fa-github"></i> GitHub</span>
+            <span class="skill-chip"><i class="fas fa-cogs"></i> GitHub Actions</span>
+            <span class="skill-chip"><i class="fas fa-sync-alt"></i> CI/CD</span>
+            <span class="skill-chip"><i class="fas fa-vial"></i> Unit Testing</span>
+            <span class="skill-chip"><i class="fas fa-check-double"></i> Integration Testing</span>
+            <span class="skill-chip"><i class="fas fa-users"></i> Agile / Scrum</span>
+        </div>
     </section>
+
 
     <!-- Projects Section -->
     <section id="projects">
         <h2>Projects</h2>
-        <div class="project">
-            <img src="https://placehold.co/600x400?text=Project+1" alt="Project 1">
-            <h3>Project 1</h3>
-            <p>Project 1 description</p>
-            <a href="https://github.com/username/project1" target="_blank">View on GitHub</a>
-        </div>
-        <div class="project">
-            <img src="https://placehold.co/600x400?text=Project+2" alt="Project 2">
-            <h3>Project 2</h3>
-            <p>Project 2 description</p>
-            <a href="https://github.com/username/project2" target="_blank">View on GitHub</a>
+
+        <div class="projects-list">
+
+            <!-- Project 1 -->
+            <div class="project-card">
+
+                <div class="project-images">
+
+                    <a href="assets/project_1/home_1.png" data-lightbox="project1">
+                        <img src="assets/project_1/home_1.png" alt="Syvrelis Equalizer Screenshot 1">
+                    </a>
+                    <a href="assets/project_1/home_2.png" data-lightbox="project1">
+                        <img src="assets/project_1/home_2.png" alt="Syvrelis Equalizer Screenshot 2">
+                    </a>
+                    <a href="assets/project_1/home_3.png" data-lightbox="project1">
+                        <img src="assets/project_1/home_3.png" alt="Syvrelis Equalizer Screenshot 3">
+                    </a>
+                    <a href="assets/project_1/settings.png" data-lightbox="project1">
+                        <img src="assets/project_1/settings.png" alt="Syvrelis Equalizer Screenshot 4">
+                    </a>
+                    <a href="assets/project_1/themes.png" data-lightbox="project1">
+                        <img src="assets/project_1/themes.png" alt="Syvrelis Equalizer Screenshot 5">
+                    </a>
+                    <a href="assets/project_1/notifications.png" data-lightbox="project1">
+                        <img src="assets/project_1/notifications.png" alt="Syvrelis Equalizer Screenshot 6">
+                    </a>
+
+                </div>
+
+                <div class="project-content">
+                    <h3>Syvrelis Equalizer</h3>
+
+                    <ul>
+                        <li>Android audio enhancement app built with Flutter + Kotlin</li>
+                        <li>Features multi-band equalizer, bass boost, reverb, and spatial audio</li>
+                        <li>Automatically attaches to active music players or works globally</li>
+                        <li>Material 3 UI with dynamic themes and persistent user settings</li>
+                        <li>Designed for both audiophiles and everyday music listeners</li>
+                    </ul>
+
+                    <a href="https://github.com/satyamroy15/vibe_fx_eq" target="_blank" class="project-link">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+
+                <div class="project-images">
+
+                    <a href="assets/project_2/home.png" data-lightbox="project2">
+                        <img src="assets/project_2/home.png" alt="Auvryntis Stats Screenshot 1">
+                    </a>
+                    <a href="assets/project_2/battery_1.png" data-lightbox="project2">
+                        <img src="assets/project_2/battery_1.png" alt="Auvryntis Stats Screenshot 2">
+                    </a>
+                    <a href="assets/project_2/battery_2.png" data-lightbox="project2">
+                        <img src="assets/project_2/battery_2.png" alt="Auvryntis Stats Screenshot 3">
+                    </a>
+                    <a href="assets/project_2/network_1.png" data-lightbox="project2">
+                        <img src="assets/project_2/network_1.png" alt="Auvryntis Stats Screenshot 4">
+                    </a>
+                    <a href="assets/project_2/network_2.png" data-lightbox="project2">
+                        <img src="assets/project_2/network_2.png" alt="Auvryntis Stats Screenshot 5">
+                    </a>
+                    <a href="assets/project_2/network_3.png" data-lightbox="project2">
+                        <img src="assets/project_2/network_3.png" alt="Auvryntis Stats Screenshot 6">
+                    </a>
+
+                </div>
+
+                <div class="project-content">
+                    <h3>Auvryntis Stats</h3>
+
+                    <ul>
+                        <li>Flutter + Kotlin Android app for real-time system performance monitoring</li>
+                        <li>Tracks battery, network, CPU, RAM, and storage usage</li>
+                        <li>Interactive charts and dashboards for quick device insights</li>
+                        <li>Material 3 design with modern UI animations</li>
+                        <li>Performance alerts and notifications (upcoming)</li>
+                    </ul>
+
+                    <a href="https://github.com/satyamroy15/auvryntis_stats" target="_blank" class="project-link">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+
+            </div>
+
+
+            <!-- Project 3 -->
+            <div class="project-card">
+
+                <div class="project-images-wide">
+
+                    <a href="assets/project_3.png" data-lightbox="project3">
+                        <img src="assets/project_3.png" alt="Android Boot Info Screenshot">
+                    </a>
+
+                </div>
+
+                <div class="project-content">
+                    <h3>android_boot_info</h3>
+
+                    <ul>
+                        <li>Flutter plugin published on pub.dev for retrieving Android boot and uptime metrics</li>
+                        <li>Designed plugin architecture, Dart API, and Android native integration via platform channels
+                        </li>
+                        <li>Provides Boot Time (DateTime, ISO-8601, ms) and Boot Count</li>
+                        <li>Exposes Uptime, Awake Time, and Deep Sleep Time (Duration, ms, sec, %)</li>
+                        <li>Handled testing, documentation, and publishing to pub.dev</li>
+                    </ul>
+
+                    <a href="https://pub.dev/packages/android_boot_info" target="_blank" class="project-link">
+                        <i class="fas fa-cube"></i> View on pub.dev
+                    </a>
+
+                </div>
+
+            </div>
+
         </div>
     </section>
 
-    <!-- Experience Section -->
-    <section id="experience">
-        <h2>Experience</h2>
-        <div class="job">
-            <h3>Senior Developer</h3>
-            <p><strong>Company Two</strong> | 2022 – 2025</p>
-            <ul>
-                <li>description line 1</li>
-                <li>description line 2</li>
-                <li>description line 3</li>
-            </ul>
-        </div>
-        <div class="job">
-            <h3>Software Developer</h3>
-            <p><strong>Company One</strong> | 2021 - 2022</p>
-            <ul>
-                <li>description line 1</li>
-                <li>description line 2</li>
-                <li>description line 3</li>
-            </ul>
-        </div>
-    </section>
 
-    <!-- Contact Section -->
+    <!-- Bottom Contact Section -->
     <section id="contact">
         <h2>Contact</h2>
-        <p>Email: <a href="mailto:roy1satyam@gmail.com">roy1satyam@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/satyam-r-baa22a240"
-                target="_blank">linkedin.com/in/satyam-r-baa22a240</a></p>
-        <p>GitHub: <a href="https://github.com/satyamroy15" target="_blank">github.com/satyamroy15</a></p>
+        <div class="contact-bottom-links">
+            <a href="https://github.com/satyamroy15" target="_blank" class="contact-chip">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="https://linkedin.com/in/satyam-r-baa22a240" target="_blank" class="contact-chip">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+        </div>
     </section>
 
+
     <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 Satyam Roy. All rights reserved.</p>
+    <footer class="site-footer">
+        <div class="footer-content">
+            <!-- Copyright -->
+            <p>&copy; 2026 Satyam Roy. All rights reserved.</p>
+
+            <!-- Contact Links -->
+            <div class="footer-links">
+                <a href="https://github.com/satyamroy15" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/satyam-r-baa22a240" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+
+            <!-- Small Divider -->
+            <hr class="footer-sub-divider">
+
+            <!-- Hosted on GitHub -->
+            <p class="footer-credit">
+                Hosted with <span class="heart">❤️</span> on
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png"
+                        alt="GitHub Logo" class="github-logo-inline">
+                </a>
+            </p>
+        </div>
     </footer>
+
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn" title="Back to Top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+
+
+    <!---- SCRIPTS ---->
 
     <!-- Theme Toggle Script -->
     <script>
@@ -145,12 +306,35 @@
 
             // Swap icon depending on theme
             if (document.body.classList.contains('dark-mode')) {
-                themeIcon.textContent = '☀️'; // sun icon for dark mode
+                themeIcon.classList.remove('fa-moon');
+                themeIcon.classList.add('fa-sun');
             } else {
-                themeIcon.textContent = '🌙'; // moon icon for light mode
+                themeIcon.classList.remove('fa-sun');
+                themeIcon.classList.add('fa-moon');
             }
         });
+
+
+        // Scroll to Top Script
+        window.onscroll = function () {
+            const btn = document.getElementById("scrollTopBtn");
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        };
+
+        // Smooth scroll to top
+        document.getElementById("scrollTopBtn").addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
     </script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Lightbox script -->
+    <script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox.min.js"></script>
 
 </body>
 
