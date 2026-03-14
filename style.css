@@ -8,6 +8,8 @@ body {
     background: #ffffff;
     color: #333;
     transition: background 0.3s, color 0.3s;
+    /* Add smooth scrolling */
+    scroll-behavior: smooth;
 }
 
 
